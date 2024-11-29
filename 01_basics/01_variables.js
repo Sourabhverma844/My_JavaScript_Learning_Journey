@@ -1,24 +1,27 @@
-const accountId = 12345
-let accountEmail = "hitesh@google.com"
-var accountPassword = "12345"
-accountCity = "Jaipur"
-let accountState;
-
-// account Id = 2 is not allowed Beacase Hamne const me store kia tha or const me hum jo bhi store krenge wo constant rahega use change nahi ki aja sakta he.
-
+const accountId = 844
+let accountEmail = "Sourabh@blockchaindev.com"
+var accountPassword = "123456"
+accountCity = "Germany"
 console.log(accountId);
-accountEmail = "Aniketverma458@gmail.com"
+// accountId = 2 (is not allowed beacase ham pahle hi const me accountId me ek value store kar chuke he, or const variable me hum value ko reassign nahi kar sakte he.)
+
+accountEmail = "Aniket458@JavaScript.com"
 accountPassword = "54321"
 accountCity = "Indore"
 console.log(accountEmail);
+let accountState;
 console.table([accountId,accountEmail,accountPassword,accountCity,accountState])
-// Agar Hum Sirf Variable Define Karke rakh de use value na de to runtime par use undefined value de di jati he.
-// hum let or var dono ki value ko change kar pa rahe he , then hame dono ki jaurat kyo he hum kisi ek ko hi har jgha use kar lete ?
-// initially javascript scope pe base par kam hi nahi karti th , JS me Scope ka ek problem tha, ye BlockScope ko control nahi kar pati thi, ab ese me ko new programmer aya or usne var me change kia to hjaha bh var ka refrence dia hoga wo sab jgha change ho jaega. islia hum let ka use karne lge. 
-// var is function scoped and let is block scoped.
-// Final Note Please do not use var, use let in most case
+// accountState "undefined" output dega because hamne variable to initialize kar dia but value assign nahi ki.
 
-// accountCity me hamne direct Value di na var likha na let likha fir ye kese chal gya.
-// in js hum direct bina datatype die variable bna sakte he ya value store kar sakte he.
+/* Question : Hum let Or var Dono Ki Value Ko Change Kar Pa Rahe He, 
+Fir Hame Dono Ki Jaurat Kyo He Hum Kisi Ek Ko Hi Har Jgha Use Kar Lete ?
+Answer : initially JavaScript scope ke base par kam hi nahi karti thi, 
+JavaScript me scope ka ek problem tha, ye blockScope ko control nahi kar
+pati thi, ab ese me koi new programmer aya or usne var me change kia to
+jaha bhi var ka refrence dia hoga wo sab jgha change ho jaega.
+islia hum let ka use karne lge. */
+// "var" is function scoped and "let" is block scoped.
+// final note please do not use "var" use "let" insted.
 
-
+/* Question : accountCity me hamne direct Value di na var likha na let likha fir ye kese chal gya ?
+Answer : in JavaScript hum direct bina datatype die variable bna sakte he ya value store kar sakte he. */
