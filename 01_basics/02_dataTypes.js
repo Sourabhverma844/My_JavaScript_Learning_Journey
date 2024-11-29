@@ -23,4 +23,12 @@ let state; //Hamne variable define kia he lekin value nahi di to undefined outpu
 null 
 console.table([age,isLoggedIn,Name])
 
-//null = standalone value
+//null = standalone value jab Koi Bhi Value na dena ho empty dena ho tab hum use karte he , null ka mean 0 nahi he because agar kisi program me hum temprature ko lete he to 0 hone par bhi wo ek temprature hi hua, to agar us waqt program theak treeke se kam nahi kar raha ho to hum null denge.
+//symbol = Jab bhi hme bat karna he unique ke lie , to hum symbols use kar lete he, iska use react me jyada hota he.
+// object 
+console.log(typeof age)
+console.log(typeof state)
+console.log(typeof null)
+//typeof se hum kisi ka bhi type jan sakte he.
+//undefined khud me hi ek special value he or iska type undefined hi he 
+//null ek object type he 
