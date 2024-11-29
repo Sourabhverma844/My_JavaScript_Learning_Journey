@@ -18,7 +18,7 @@ JavaScript code nahi. in standards me likha hota he ki
 Jese ap loop lga rahe he to kis trha se input lena chaiye, ese output ayega ye sab */
 
 let Name = "Sourabh Verma" // "String" we can also wite this under single''
-let age = 24  // "integer" or number range is 2^53
+let age = 24  // "number" isme "integer" or "float" dono hote he iski range 2^53 hoti he
 let isLoggedIn = false // "boolean" value
 let state; //Hamne variable define kia he lekin value nahi di to undefined output ayega
 null 
