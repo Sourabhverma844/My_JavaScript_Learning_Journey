@@ -46,5 +46,8 @@ console.log(booleannotLoggedIn);
 console.log(booleanmyStatus);
 console.log(booleanemp);
 
-let number = 111
-let numberString = String(number)
+let empnumber = 111
+let numberInString = String(empnumber)
+console.log(typeof empnumber)
+console.log(typeof numberInString)
+console.log(numberInString)
