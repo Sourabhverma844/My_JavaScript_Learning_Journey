@@ -17,4 +17,21 @@ console.log("1" + 2);
 console.log(1 + "2");
 console.log("1" + 2 + 2); //agar string first he to sabhi string.
 console.log(1 + 2 + "2"); //agar number first he to sabhi number.
+console.log((1+2)+"2");
 
+console.log(true);
+console.log(+true);
+console.log(+"");
+
+let gameCounter = 100
+gameCounter++ //postfix
+++gameCounter //prefix
+console.log(gameCounter);
+
+let x = 3;
+const y = x++;
+console.log(`x:${x}, y:${y}`);
+
+let a = 3;
+const b = ++a;
+console.log(`a:${a}, b:${b}`);
