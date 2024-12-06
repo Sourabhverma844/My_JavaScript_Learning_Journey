@@ -41,7 +41,8 @@ console.log(gameName.includes("Ani")); // true
 console.log(gameName.includes("xyz")); // false
 console.log(gameName.indexOf("i")); // 3
 console.log(gameName.indexOf("z")); // -1
-console.log(gameName.isWellFormed()); // true
+
+
 console.log(gameName.italics()); // <i>Aniket</i>
 console.log(gameName.lastIndexOf("i")); // 3
 console.log(gameName.length); // 6
@@ -51,3 +52,10 @@ console.log(gameName.localeCompare("Anil")); // -1 (Lexicographically smaller)
 console.log(gameName.match(/A/)); // ['A', index: 0, input: 'Aniket', groups: undefined]
 console.log([...gameName.matchAll(/i/g)]); // [{value: 'i', index: 3}]
 console.log(gameName.normalize()); // Aniket (no visible change)
+
+const url = "https://gmail.com/sourabh%20gmail.com"
+console.log(url.replace('%20','844'))
+console.log(url.includes('Aniket'))
+
+const me = "Aniket-Verma-JavaScript"
+console.log(me.split('-'));
