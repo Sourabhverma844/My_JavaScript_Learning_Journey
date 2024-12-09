@@ -62,3 +62,19 @@ console.log(Object.entries(tinderUser));//ek array ke ander key values ke aaray 
 // ab yaha isse bachne ke lie ya to hum use manually value de de ya simply usse pooch le object se.
 console.log(tinderUser.hasOwnProperty('isLoggedIn')); // isse hme pta chalega ki koi particular property us object me exist karti he ya nahi.
 console.log(tinderUser.hasOwnProperty('isLoggedOut'));
+
+//destructuring of objects in JavaScript
+
+const emp = {
+    empname: "Sourabh Verma",
+    salary: 6000000,
+    profile: "smart contract dev"
+}
+//console.log(emp.empname); is code me koi dikkat ni he lekin kai bar isi ko 3 bar print krna he to fir hum doosra syantax use krenge
+const {empname/*key*/} = emp/*kis object se key chaiye*/
+console.log(empname);
+const {profile:job} = emp //yaha object ko destructure kar dia,profile ko job name de dia ab jab bhi acess krna ho direct job  type kar denge
+console.log(job)
+
+/*What is API
+let assume ke hotel me gae or menu me se koi dish order kar di, ab ye apki chinta na*/
