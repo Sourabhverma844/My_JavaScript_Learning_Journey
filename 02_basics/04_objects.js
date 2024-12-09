@@ -77,4 +77,25 @@ const {profile:job} = emp //yaha object ko destructure kar dia,profile ko job na
 console.log(job)
 
 /*What is API
-let assume ke hotel me gae or menu me se koi dish order kar di, ab ye apki chinta na*/
+let assume ke hotel me gae or menu me se koi dish order kar di, ab ye apki chinta nahi he kii wo ata tel kaha se lae kese bnae wo sab chef ki prblem, so API documentation is just like that menu ki apko kya chahiye data me baki API ke backend pe sab kese ho raha he wo janne ki hme abhi jarurat nahi 
+API me hme backend se values ati he pahle xml structure me ati thi abhi Json me ati he.
+Json bacially object hi he bus isme key or value dono string me hoti he 
+ek esa object jiska koi name nahi he
+examp: https://api.github.com/users/hiteshchoudhary
+hum fetch method se is url ko call krunge to response me hme data mil jaega
+as we know how objects work to me data ko object me convert kar lunga or ek ek value nikal lunga.
+*/
+// {
+//    "name":"Sourabh",
+//    "profile":"BlockchainDeveloper",
+//    "salary":"7Digitsperannum"
+// }
+//Jaroori Nahi he ki har bar hme API object me hi mile, kai bar wo array ke formate me bhi mil sakti he, like array of objects
+//to hum array ke uper loop lga ke objects ko ek ek karke le sakte he
+// [
+//     {},
+//     {},
+//     {}
+// ]
+//Example api : https://randomuser.me/ copy
+//Json Formater me ja ke formate and beautify
