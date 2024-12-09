@@ -1,0 +1,64 @@
+const aniket = new Object() //Singleton object
+const sourabh = {} // non-singleton, literal, key valuer 
+console.log(aniket);
+console.log(sourabh);
+console.log(typeof aniket);
+console.log(typeof sourabh);
+
+const tinderUser = {}
+tinderUser.id = "123abc"
+tinderUser.name = "Sammy"
+tinderUser.isLoggedIn = false
+
+console.log(tinderUser);
+
+const regularUser ={
+    email: "sourabhverma@ripple.com",
+    fullname:{
+        userfullname:{
+            firstname: "sourabh",
+            lastname: "verma"
+        }
+    }
+}
+console.log(regularUser.fullname.userfullname.lastname)
+
+const obj1 = {
+    1: "a",
+    2: "b",
+}
+const obj2 = {3:"a",4:"b"}
+
+const obj3 = {obj1,obj2} //wahi hua jo array me hua tha ek object ke ander 2 object a gae
+console.log(obj3);
+const obj4 = Object.assign({}/*Target*/,obj1,obj2/*Source*/);
+console.log(obj4);
+const obj5 = {5:"a",6:"b"}
+const obj6 = {...obj1,...obj2,...obj5} //Spread operator
+console.log(obj6);
+
+//database se jab bhi data ayega let suppose users aye to , array of objects ki form me ayega.
+const user = [
+    {
+        id: 1,
+        email: "A@ripple.com"
+    },
+    {
+        id: 2,
+        email: "N@ripple.com"
+    },
+    {
+        id: 3,
+        email: "I@ripple.com"
+    }
+]
+console.log(user);
+console.log(user[2].email); //array ke ander objects he to . se acess kar lia
+console.log(tinderUser);
+console.log(Object.keys(tinderUser)); //ye hame sari keys ka ek array bna ke de dega ab hum ispe loop lga sakte he
+console.log(Object.values(tinderUser));
+console.log(Object.entries(tinderUser));//ek array ke ander key values ke aaray bna die.
+//kai bar hum objects ke ander ek poora loop through kar rahe he or ek value nikal rahe he, to kai bar value nikalte waqt ho sakta wo value exits hi na karti he to crash hone ke cahnce he 
+// ab yaha isse bachne ke lie ya to hum use manually value de de ya simply usse pooch le object se.
+console.log(tinderUser.hasOwnProperty('isLoggedIn')); // isse hme pta chalega ki koi particular property us object me exist karti he ya nahi.
+console.log(tinderUser.hasOwnProperty('isLoggedOut'));
