@@ -88,5 +88,5 @@ if(userLoggedIn && debitCard){
 
 // we use || or operator to chech if any one condition is true code will run
 if(LoggedInFromEmail || LoggedInFromGoogle){
-    console.log("User Sucessfully Logged In"); a
+    console.log("User Sucessfully Logged In"); 
 }
