@@ -61,3 +61,42 @@ true
 0 == ''
 true
 */
+
+//Nullish Coalescing Operator (??): null undefined
+
+let val1;
+val1 = 5 ?? 10  //hamne val1 ko assign kia he ki ya to value jaegi 5 ya 10
+console.log(val1);
+
+let val2;
+val2 = null ?? 10
+console.log(val2);
+
+let val3;
+val3 = undefined ?? 15
+console.log(val3);
+
+let val4;
+val4 = null ?? 10 ?? 20 
+console.log(val4);
+
+/*
+null coalescing operator ko null or undefined ko handle karne me use kar sakte he.
+ab question a sakta he ki nullish coalescing operator lga ke 5 or 10, 2 value dene ka kya matlub
+hua jab output me first value jo 5 he wahi ana tha, but kai bar kya hota he jab database se call krenge
+ya specially firebase wagera use krenge ya appwrite ka use krenge. to apko directly response nahi milta he.
+apko 2 values milti he, chances he ki hme null response mile ya kuch aye hi na undefined mile.
+to is case me hamara poora ka poora code structure kharab ho sakta he, islia us cases ke lie 
+specially nullish coalescing operator banya gya he. ki values ko apko treat karna he ki acha null ho to uske 
+ander null assign karlo taki me us hisab se case ko adjust kar lu, undefined ho to theak he warna koi
+value a rahi ho to value assign kar do.
+val 2 me null or 10 me se 10 a gai, ye operator isi hisab se design kia gya he 
+ki null ayi he to ho sakta he ki koi program safety check ki wjha se run na ho islia doosri value ko run kar do
+null && 10 && 20 jab ese 3 values ayengi to yaha par jo first value ayegi use output me return krega.
+*/ 
+
+// Ternary Operator
+// condition ? true : false
+
+const smartcontractdev = 8000000
+smartcontractdev >= 6000000 ? console.log("Hi Sourabh You are hired in ripple") : console.log("interview date 5-june-1998")
