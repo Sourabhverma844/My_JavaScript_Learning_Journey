@@ -9,6 +9,13 @@
 // }
 
 //Code Select karne ke bad ctrl + Shift + down arrow se ham copy paste kar sakte he.
+// const month = "Jan"
+// switch(month){
+//     case "Jan":
+//         console.log("January");
+//         break;
+// }
+/*Jo bhi data type hum const me key me le rahe he , wahi hame case value me lena hoga match karne ke lie*/
 const month = 3
 switch(month){
     case 1:

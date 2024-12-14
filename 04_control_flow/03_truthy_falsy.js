@@ -1,0 +1,3 @@
+/*There is a intresting concept in JavaScript Called truthy Value and falsy Value
+as we know true or false to strict true or false he 
+but kuch value esi hoti he jinhe assume kar lia jata ki ki ha ye truth hi hongi ye false hi hongi*/
