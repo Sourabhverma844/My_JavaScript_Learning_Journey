@@ -8,7 +8,7 @@
 //         break;
 // }
 
-//Code Select karne ke bad ctrl + Shift + down arrow se ham copy paste kar sakte he.
+//Code Select karne ke bad alt + Shift + down arrow se ham copy paste kar sakte he.
 // const month = "Jan"
 // switch(month){
 //     case "Jan":
