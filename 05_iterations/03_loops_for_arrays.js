@@ -60,3 +60,15 @@ for (const [key,value] of map){ //here we sucessfully destructured the array
 // for ( const key of employe){
 //     console.log(`${key}`)
 // } it gives us TypeError that employe is not iterable
+const employe = new Map()
+employe.set('Name', "Sourabh")
+employe.set('compney', "Ripple")
+employe.set('Salary', "6000000")
+employe.set('Place', "New Jersy")
+
+for (const key in employe ){
+    console.log(key);
+}
+// map pe hamne for in loop lagaya, ye runtime pe eror nahi dega but as we know map is not iterable.
+// ye run bhi nahi hoga
+//jab bhi objects ke uper loop lagan ho hum for in loop use krenge and jab bhi arrays ke uper loop lagana ho hum for of loop use krenge.
