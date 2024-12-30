@@ -13,10 +13,27 @@
 </body>
 <script>
     function addLanguage(langName){
-        const Li = document.createElement('Li');
-        Li.innerHTML = `${langName}`
-        document.querySelector(`.languages`).appendChild(Li)
-    } 
+        // sabse pahle ek list item create krenge
+        // jo bhi element create krna he use backtics ke ander likhenge jese yaha list item create krna tha islia li
+        // list item ke ander ek value add kar dete he jo bhi value langName me ayi ho
+        // fir hum hamrai ul list jiski class language he use select krenge
+        // or jo bhi new element add kia use append krenge
+        const listName = document.createElement(`li`);
+        listName.innerHTML = `${langName}`
+        document.querySelector(`.languages`).
+        appendChild(listName)
+    }
     addLanguage("Solidity")
+    addLanguage("Node.js")
+    // is apprach se listitem add to ho gya but yaha ek dikkat he , jab list iem add ho raha he
+    // us waqt document me poore ke poore list item traverse hote he then last me append kia jata he
+    // yaha 2 list item the to dikkat nahi hui but kisi code me lakho list item hue to dikkat hogi
+
+    function addOptiLanguage(langName){
+        const Li = document.createElement(`li`)
+        Li.appendChild(document.createTextNode(langName))
+        document.querySelector(`.languages`).appendChild(Li)
+    }
+    addOptiLanguage("Rust")
 </script>
 </html>
